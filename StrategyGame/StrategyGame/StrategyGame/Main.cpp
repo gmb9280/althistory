@@ -7,6 +7,8 @@ int main()
 	std::cout << "Hello world";
 	Vertex v = Vertex(2.3f, 5.6f, 10.3f);
 	v.print();
+	v.setY(0.0f); 
+	v.print();
 
 	glewExperimental = GL_TRUE;
 	glfwInit();

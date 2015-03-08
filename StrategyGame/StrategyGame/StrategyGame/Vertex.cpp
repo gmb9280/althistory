@@ -34,19 +34,24 @@ const float& Vertex::getZ()
 
 void Vertex::setX(float _x)
 {
+	*(this->x) = _x; 
 }
 
 void Vertex::setY(float _y)
 {
-
+	*(this->y) = _y;
 }
 
 void Vertex::setZ(float _z)
 {
+	*(this->z) = _z;
 }
 
 void Vertex::set(Vertex _v)
 {
+	*(this->x) = _v.getX(); 
+	*(this->y) = _v.getY(); 
+	*(this->z) = _v.getZ();
 }; 
 
 
