@@ -1,9 +1,13 @@
 #include "Main.h"
+#include "Vertex.h"
 
 // Entry point
 int main()
 {
 	std::cout << "Hello world";
+	Vertex v = Vertex(2.3f, 5.6f, 10.3f);
+	v.print();
+
 	glewExperimental = GL_TRUE;
 	glfwInit();
 	// Create and configure the window
@@ -41,9 +45,7 @@ int main()
 
 #pragma endregion
 
-
-
-	//Next: event loop. 
+	// Next: event loop. 
 	while (!glfwWindowShouldClose(window))
 	{
 		glfwSwapBuffers(window); 
